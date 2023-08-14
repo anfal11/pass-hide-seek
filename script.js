@@ -10,3 +10,10 @@ togglePassword.addEventListener("click", function(){
         togglePassword.innerHTML = `<i class="fa-regular fa-eye  relative right-8"></i>`;
     }
 })
+
+passwordInput.addEventListener("input", function() {
+    if (passwordInput.value.length > 10) {
+        alert("Password must be less than 10 characters");
+        passwordInput.value = passwordInput.value.slice(0, 10);
+    }
+});
