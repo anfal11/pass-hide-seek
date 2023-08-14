@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hide & Seek</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/70349af01a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- তোমাকে একটা input field তৈরি করতে হবে password এর জন্য। pass- word field এ একটা eye icon থাকবে। যদি eye icon ক্লিক করি তাহলে password eye icon B change eye-slash icon হয়ে যাবে। এখন eye slash icon টা তে ক্লিক করলে password টা hide হয়ে যাবে। নিচের output টা দেখলে বুঝতে পারবে। তোমাকে JavaScript দিয়ে functionality টা করতে হবে। তুমি CSS ব্যবহার করে input field টা design করবে। -->
+
+<div class="h-screen flex items-center justify-center">
+    <div class="password-container">
+        <input type="password" id="passwordInput" placeholder="Enter password" class="border border-emerald-300 outline-none rounded-md shadow-lg  shadow-indigo-500/50 p-4">
+        <span id="togglePassword" class="toggle-password">
+             <i class="fa-regular fa-eye relative right-8"></i>
+        </span>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+
+</html>
